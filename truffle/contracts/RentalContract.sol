@@ -1,6 +1,6 @@
 pragma solidity ^0.4.23;
 
-contract Mietvertrag {
+contract RentalContract {
   address  biker;
   address  lordOfBikes;
   uint duration;

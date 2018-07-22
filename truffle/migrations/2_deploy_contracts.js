@@ -1,10 +1,10 @@
-var Mietvertrag = artifacts.require("./Mietvertrag.sol");
-var Haftpflicht = artifacts.require("./Haftpflicht.sol");
-var SchadenIncident = artifacts.require("./SchadenIncident.sol");
+var RentalContract = artifacts.require("./RentalContract.sol");
+var LiabilityContract = artifacts.require("./LiabilityContract.sol");
+var DamageIncident = artifacts.require("./DamageIncident.sol");
 
 
 module.exports = function (deployer) {
-  deployer.deploy(Mietvertrag);
-  deployer.deploy(Haftpflicht);
-  deployer.deploy(SchadenIncident);
+  deployer.deploy(RentalContract);
+  deployer.deploy(LiabilityContract);
+  deployer.deploy(DamageIncident);
 }; 

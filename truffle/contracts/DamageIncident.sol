@@ -1,5 +1,5 @@
 pragma solidity ^0.4.24;
-contract Schadenincident {
+contract DamageIncident {
  /* Define variable of this contracts attributes*/
  address liability;
  uint damageSum = 500;
