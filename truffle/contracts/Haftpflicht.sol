@@ -1,5 +1,5 @@
 pragma solidity ^0.4.24;
-contract haftpflicht {
+contract Haftpflicht {
  /* Define variable owner of the type address*/
  address biker;
  address insuranceCompany;
@@ -9,12 +9,17 @@ contract haftpflicht {
 
  /* this function is executed at initialization and sets bikerAdress in the contract */
 
- constructor(address bikerAdress) public { 
-    biker = bikerAdress;
+ constructor() public { 
+  }
+ 
+ function initContractBetween(address c, address i) public {
+    biker = c;
+    insuranceCompany = i; 
     maximumAmountOfCoverage = 2000;
     coverageDescription = "Bla bla bla";
     insurancePeriod = 6;
  }
+ 
    function getBiker() public constant returns (address) {
     return biker;
  }

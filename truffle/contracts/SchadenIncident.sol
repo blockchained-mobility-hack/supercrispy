@@ -2,13 +2,11 @@ pragma solidity ^0.4.24;
 contract Schadenincident {
  /* Define variable of this contracts attributes*/
  address liability;
- uint damageSum;
+ uint damageSum = 500;
 
  /* this function is executed at initialization and sets bikerAdress in the contract */
 
- constructor(address liabilityAddress) public { 
-    liability = liabilityAddress;
-    damageSum = 500;
+ constructor() public { 
  }
     function getLiabilityAddress() public constant returns (address) {
     return liability;
