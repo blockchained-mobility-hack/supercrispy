@@ -4,10 +4,16 @@ contract Mietvertrag {
   address  biker;
   address  lordOfBikes;
   uint duration;
-  address bike;
+
 
   
   constructor() public {
-    lordOfBikes = msg.sender;
   }
+
+  function initContractBetween(address _biker, address _lordOfBikes, uint _duration) public {
+    biker = _biker;
+    lordOfBikes = _lordOfBikes;
+    duration = _duration;
+  }
+
 }

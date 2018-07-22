@@ -10,6 +10,7 @@ contract Haftpflicht {
  /* this function is executed at initialization and sets bikerAdress in the contract */
 
  constructor() public { 
+   
   }
  
  function initContractBetween(address c, address i) public {
