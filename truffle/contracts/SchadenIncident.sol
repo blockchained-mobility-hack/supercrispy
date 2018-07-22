@@ -16,4 +16,4 @@ contract schadenincident {
     function damageSums() public constant returns (uint) {
     return damageSum;
  }
-}s
+}
