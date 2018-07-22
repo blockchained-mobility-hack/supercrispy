@@ -16,4 +16,8 @@ contract RentalContract {
     duration = _duration;
   }
 
+  function getDuration() public constant returns (uint)  {
+    return duration;
+  }
+
 }
