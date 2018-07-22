@@ -1,4 +1,7 @@
 pragma solidity ^0.4.24;
+
+
+
 contract LiabilityContract {
  /* Define variable owner of the type address*/
  address biker;
@@ -6,6 +9,8 @@ contract LiabilityContract {
  string coverageDescription;
  uint maximumAmountOfCoverage;
  uint insurancePeriod;
+
+ uint sumOfClaims = 0;
 
  /* this function is executed at initialization and sets bikerAdress in the contract */
 
@@ -40,4 +45,12 @@ contract LiabilityContract {
    function getInsurancePeriod() public constant returns (uint) {
     return insurancePeriod;
  }
+
+  function pleasePayClaim(uint amount) public {
+    //pay claim
+    sumOfClaims = sumOfClaims + amount;
+ }
+
+ 
+ 
 }
