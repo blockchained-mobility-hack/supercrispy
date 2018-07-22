@@ -20,9 +20,10 @@ contract Test {
 
     address lordOfBikes = 0x34319e23CB9F2BC027F4fBA3CE1E90634AA3001E;
 
-    RentalContract mv = new RentalContract();
-    mv.initContractBetween(customer, lordOfBikes, 10);
+    RentalContract rc = new RentalContract();
+    rc.initContractBetween(customer, lordOfBikes, 10);
 
+    assert(rc.getDuration() == 10);
 
   }  
 }

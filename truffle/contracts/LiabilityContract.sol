@@ -12,6 +12,8 @@ contract LiabilityContract {
  constructor() public { 
    
   }
+
+
  
  function initContractBetween(address c, address i) public {
     biker = c;
@@ -19,6 +21,8 @@ contract LiabilityContract {
     maximumAmountOfCoverage = 3000;
     coverageDescription = "The insurance pays for damages on small rented bikes.";
     insurancePeriod = 6;
+   
+    log0("LogContractInitialized"); 
  }
  
    function getBiker() public constant returns (address) {
